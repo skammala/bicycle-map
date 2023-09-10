@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bicycle-map-e7ea7": {
+      "hosting": {
+        "bicycle-map": [
+          "bicycle-map-e7ea7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bicycle-map-e7ea7"
+  }
+}
