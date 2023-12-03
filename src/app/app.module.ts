@@ -5,12 +5,10 @@ import { AppComponent } from './app.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LandingPageComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
