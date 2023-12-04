@@ -10,14 +10,15 @@ export class AppComponent implements OnInit {
   title = 'bicycle-map';
 
   ngOnInit(): void {
-    let loader = new Loader({
-      apiKey: "AIzaSyCgJSg7uQYsTyhE2M_7rxcBZ9XZPIKrpRE"
+    const loader = new Loader({
+      apiKey: "AIzaSyCgJSg7uQYsTyhE2M_7rxcBZ9XZPIKrpRE",
+      version: "weekly"
     })
 
     loader.load().then(() => {
       new google.maps.Map(document.getElementById("map")!, {
         center: { lat: 35.91320, lng: -79.05580 },
-        zoom: 6
+        zoom: 15
       })
     })
   }
